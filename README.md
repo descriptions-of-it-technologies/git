@@ -49,6 +49,10 @@
 * `git stash`
 * `git stash pop`<br/><br/>
 
+* `git log`
+* `git log --oneline`<br/><br/>
+
+* `git revert commitHash` Undo/Revert the last commit.
 
 
 
