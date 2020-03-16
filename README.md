@@ -10,7 +10,7 @@
 * [Git Commands.](git-commands.md)
 * [The .gitignore File.](#the-gitignore-file)
 * [Platforms.](#platforms)
-* [ Graphical User Interfaces Clients (GUI).](#graphical-user-interfaces-clients-gui)
+* [Graphical User Interfaces Clients (GUI).](#graphical-user-interfaces-clients-gui)
 * [Articles.](#articles)
 * [Help.](#help)
 
