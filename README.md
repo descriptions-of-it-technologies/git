@@ -7,7 +7,11 @@
 ## Contents at a Glance.
 * [About.](#about)
 * [Documentation.](#documentation)
-* [Commands.](#commands)
+* [Git Commands.](git-commands.md)
+* [The .gitignore File.](#the-gitignore-file)
+* [Platforms.](#platforms)
+* [ Graphical User Interfaces Clients (GUI).](#graphical-user-interfaces-clients-gui)
+* [Articles.](#articles)
 * [Help.](#help)
 
 
@@ -26,33 +30,51 @@
 
 
 
-## Commands.
-* `git status`<br/><br/>
 
-* `git add nameFile` Adding a modified file by name.
-* `git add .` Adding all modified files.<br/><br/>
+## The .gitignore File.
 
-* `git commit -am 'Description of commit'`<br/><br/>
+* You can list files/directories that you want to explicitely exclude from Git in a `.gitignore` file. This file should 
+be placed at the root of your repository.
 
-* `git branch branchName` Create a new branch.<br/><br/>
-* `git branch -v`
-* `git branch -f nameBranch nameCommit`
-* `git branch -f nameBranch nameBranch`<br/><br/>
+* [GitHub .gitignore Docs.](https://github.com/github/gitignore)
 
-* `git checkout branchName` Switch to another branches.
-* `git checkout -force branchName` 
-* `git checkout -f branchName` 
-* `git checkout -f` Recover files to the last commit in this branch.
-* `git checkout -b branchName` Create a new branch and switch to this branch.
-* `git checkout -B branchName commitName`<br/><br/>
 
-* `git stash`
-* `git stash pop`<br/><br/>
 
-* `git log`
-* `git log --oneline`<br/><br/>
 
-* `git revert commitHash` Undo/Revert the last commit.
+
+## Platforms.
+
+The following platforms can be used to host your Git repositories.
+
+| NAME                               | PRICE |
+| ---------------------------------- | ----- |
+| [Github](https://github.com)       | Free  |
+| [Gitlab](https://gitlab.com)       | Free  |
+| [Bitbucket](https://bitbucket.org) | Free  |
+
+
+
+
+
+### Graphical User Interfaces Clients (GUI).
+
+Is the command-line not for you? Try one of the following GUIs.
+
+| NAME                                         | OS                | PRICE           |
+| -------------------------------------------- | ----------------- | --------------- |
+| [Github](https://desktop.github.com)         | Mac and Windows   | Free            |
+| [Source Tree](https://www.sourcetreeapp.com) | Mac and Windows   | Free            |
+| [Tower](https://www.git-tower.com)           | MacOS and Windows | 59 USD per year |
+
+
+
+
+
+## Articles.
+-   [Learn Git concepts, not commands](https://dev.to/unseenwizzard/learn-git-concepts-not-commands-4gjc)
+-   [Syncing a Fork](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
+-   [Flight rules for Git](https://github.com/k88hudson/git-flight-rules) - What to do when things go wrong...
+-   [Git Flow](https://guides.github.com/introduction/flow/)
 
 
 
