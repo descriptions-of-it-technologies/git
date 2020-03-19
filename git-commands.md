@@ -181,6 +181,7 @@
 | ------------------------------------------------------ | ----------------------------------------------------------------- |
 | git push                                               | Pushes all local branch commits to remote repository.             |
 | git push origin [branchName]                           | Push [branch] to remote.                                          |
+| git push origin --delete <BranchName>                  | Delete branch from remote.                                        |
 | git push [remote][branch]                              | Create and checkout new branch.                                   |
 | git push --dry-run                                     |                                                                   |
 | git push --force-with-lease                            |                                                                   | 
@@ -245,6 +246,7 @@
 | ----------------------------------------------- | ------------------------------------------------------------------------------------------- |
 | git reset [file]                                | Remove [file] from staging area.                                                            |
 | git reset --hard HEAD                           | Removes all local changes in working directory.                                             |
+| git reset HEAD                                  |                                                                                             |
 | git reset --hard [commit]                       | Reset your HEAD pointer to previous commit and discard all changes since then.              |
 | git reset --hard && git clean -dffx             |                                                                                             |
 | git reset --hard                                |                                                                                             |
@@ -259,12 +261,12 @@
 
 | Key/Command                                                 | Description                         |
 | ----------------------------------------------------------- | ----------------------------------- |
-| git branch                                                  |                                     |
+| git branch                                                  | Show all Local branch.              |
 | git branch [branchName]                                     | Create a new branch.                |
-| git branch -a                                               |                                     |
+| git branch -a                                               | All local and remote branch.        |
 | git branch -d [branchName]                                  | Deletes the [branch].               |
 | git branch -D                                               |                                     |
-| git branch -r                                               | to see how many branch you have in. |
+| git branch -r                                               | Show all Remote branch.             |
 | git branch -v                                               |                                     |
 | git branch -f [nameBranch] [nameCommit]                     |                                     |
 | git branch -f [nameBranch] [nameBranch]                     |                                     |
@@ -381,17 +383,19 @@
 | Key/Command                        | Description                                                       |
 | ---------------------------------- | ----------------------------------------------------------------- |
 | git stash                          |                                                                   |
+| git stash save [stashName]         | Stash all staged changes.                                         |
 | git stash pop                      |                                                                   |
 | git stash push                     |                                                                   |
 | git stash apply                    |                                                                   |
 | git stash --all                    |                                                                   |
 | git stash clear                    |                                                                   |
 | git stash drop                     |                                                                   |
-| git stash list                     |                                                                   |
+| git stash list                     | List all stashed.                                                 |
 | git stash pop                      |                                                                   |
 | git stash show --text              |                                                                   |
 | git stash --include-untracked      |                                                                   |
-
+| git stash drop stash@{ID}          | ID from listed stash.                                             |
+| git stash apply stash@{ID}         | Merge stashed changes to branch                                   |
 
 
 
@@ -457,6 +461,7 @@
 | Key/Command                                  | Description                                                      |
 | -------------------------------------------- | ---------------------------------------------------------------- |
 | git diff                                     |                                                                  |
+| git diff [ChangedFileName]                   | Show the changes in the file                                     |
 | git diff --cached                            |                                                                  |
 | git diff --cached --word-diff                |                                                                  |
 | git diff --staged                            |                                                                  |
