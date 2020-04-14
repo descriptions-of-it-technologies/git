@@ -1,3 +1,4 @@
+
 # Git Commands.
 
 
@@ -85,7 +86,8 @@
 | git config --global user.email [email] | Set author email to be used for all commits.          |
 | git config color.ui true               | Enables helpful colorization of command line output.  |
 | git config --list                      |                                                       |
-
+| git config -l                          |                                                       |
+|                                        |                                                       |
 
 
 
