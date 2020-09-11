@@ -464,6 +464,7 @@
 | -------------------------------------------- | ---------------------------------------------------------------- |
 | git diff                                     |                                                                  |
 | git diff [ChangedFileName]                   | Show the changes in the file                                     |
+| git difftool [ChangedFileName]               | Show the changes in the file                                     |
 | git diff --cached                            |                                                                  |
 | git diff --cached --word-diff                |                                                                  |
 | git diff --staged                            |                                                                  |
