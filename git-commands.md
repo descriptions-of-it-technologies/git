@@ -9,6 +9,7 @@
 * [About.](#about)
 * [Documentation.](#documentation)
 * [Glossary.](#glossary)
+* [Most used Git commands.](#most-used-git-commands)
 * [git add](#git-add)
 * [git apply](#git-apply)
 * [git branch](#git-branch)
@@ -73,6 +74,25 @@
 | fork                    | Copy of a repository owned by a different user.                                                                          |
 | pull request            | A method of submitting contributions to a repository.                                                                    |
 | HEAD                    | Representing your current working directory.                                                                             |
+
+
+
+
+
+## Most used Git commands. 
+| Keywords                | Description                                                                                                              |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| git status              | Display the state of the working directory and staging area.                                                             |
+| git reset               | Undo local changes to the state of Git repo.                                                                             |
+| git merge               | Merge branch into an active branch.                                                                                      |
+| git push                | Upload content for local repository to a remote repository.                                                              |
+| git config              | Configure the git config.                                                                                                |
+| git init                | Initialize a local git repository.                                                                                       |
+| git add                 | Add one or more files to staging area.                                                                                   |
+| git diff                | View the changes made to the file.                                                                                       |
+| git commit              | Commit changes to head(local repository) but not to the remote repository.                                               |
+| git pull                | Fetch and download content from a remote repository.                                                                     |
+|                         |                                                                                                                          |
 
 
 
@@ -306,6 +326,7 @@
 | Key/Command                                   | Description                                                      |
 | --------------------------------------------- | ---------------------------------------------------------------- |
 | git log                                       | Lists version history for the current branch.                    |
+| git log --merge                               | Lists of commits that are causing the conflict.                  |
 | git log --author=[name]                       | Lists version history for the current branch from certain author.|
 | git log --pretty=oneline                      | Lists compressed version history for the current branch.         |
 | git log --oneline                             |                                                                  |
@@ -318,6 +339,7 @@
 | git log --oneline --decorate                  |                                                                  |
 | git log --oneline --decorate --graph --all    |                                                                  |
 | glp=_git_log_prettily                         |                                                                  |
+|                                               |                                                                  |
 
 `git log --graph --pretty='\''%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset'\`
 `git log --graph --pretty='\''%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset'\'' --date=short`
