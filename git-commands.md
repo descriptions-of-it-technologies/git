@@ -80,19 +80,29 @@
 
 
 ## Most used Git commands. 
-| Keywords                | Description                                                                                                              |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| git status              | Display the state of the working directory and staging area.                                                             |
-| git reset               | Undo local changes to the state of Git repo.                                                                             |
-| git merge               | Merge branch into an active branch.                                                                                      |
-| git push                | Upload content for local repository to a remote repository.                                                              |
-| git config              | Configure the git config.                                                                                                |
-| git init                | Initialize a local git repository.                                                                                       |
-| git add                 | Add one or more files to staging area.                                                                                   |
-| git diff                | View the changes made to the file.                                                                                       |
-| git commit              | Commit changes to head(local repository) but not to the remote repository.                                               |
-| git pull                | Fetch and download content from a remote repository.                                                                     |
-|                         |                                                                                                                          |
+| Keywords                                                 | Description                                                                                                              |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| git status                                               | Display the state of the working directory and staging area.                                                             |
+| git reset                                                | Undo local changes to the state of Git repo.                                                                             |
+| git merge                                                | Merge branch into an active branch.                                                                                      |
+| git push                                                 | Upload content for local repository to a remote repository.                                                              |
+| git config                                               | Configure the git config.                                                                                                |
+| git init                                                 | Initialize a local git repository.                                                                                       |
+| git add                                                  | Add one or more files to staging area.                                                                                   |
+| git diff                                                 | View the changes made to the file.                                                                                       |
+| git commit                                               | Commit changes to head(local repository) but not to the remote repository.                                               |
+| git pull                                                 | Fetch and download content from a remote repository.                                                                     |
+| git branch                                               | Show locally branches.                                                                                                   |
+| git branch -r                                            | Show remote branches.                                                                                                    |
+| git branch -a                                            | Show locally and remote branches.                                                                                        |
+| git branch -d localBranchName                            | Delete branch locally.                                                                                                   |
+| git branch -D localBranchName                            |                                                                                                                          |
+| git push origin --delete remoteBranchName                | Delete branch remotely.                                                                                                  |
+| git checkout nameBranch                                  | Switch to branch.                                                                                                        |
+| git checkout -b newBranchName                            | Create new Branch.                                                                                                       |
+| git log --decorate --graph --all                         |                                                                                                                          |
+| git push origin nameNewBranch                            | Push new branch to remote.                                                                                                                         |
+|                                                          |                                                                                                                          |
 
 
 
