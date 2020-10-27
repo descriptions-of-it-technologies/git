@@ -62,7 +62,7 @@
 
 ## Glossary.
 
-| Keywords                | Description                                                                                                              |
+| Key/Command             | Description                                                                                                              |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | git                     | Open-source distributed version-control system, used to store code in repositories.                                      |
 | GitHub/Gitlab/Bitbucket | Platform for hosting and collaborating on Git repositories.                                                              |
@@ -80,7 +80,8 @@
 
 
 ## Most used Git commands. 
-| Keywords                                                 | Description                                                                                                              |
+
+| Key/Command                                              | Description                                                                                                              |
 | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | git status                                               | Display the state of the working directory and staging area.                                                             |
 | git reset                                                | Undo local changes to the state of Git repo.                                                                             |
@@ -101,7 +102,7 @@
 | git checkout nameBranch                                  | Switch to branch.                                                                                                        |
 | git checkout -b newBranchName                            | Create new Branch.                                                                                                       |
 | git log --decorate --graph --all                         |                                                                                                                          |
-| git push origin nameNewBranch                            | Push new branch to remote.                                                                                                                         |
+| git push origin nameNewBranch                            | Push new branch to remote.                                                                                               |
 |                                                          |                                                                                                                          |
 
 
