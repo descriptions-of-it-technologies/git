@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ORGANIZATION_NAME=fork-repositories-trl
+ORGANIZATION_NAME=quarkus-based-application
 
 mkdir -p $ORGANIZATION_NAME
 

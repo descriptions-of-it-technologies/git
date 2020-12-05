@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ORGANIZATION_NAME=fork-repositories-trl
+ORGANIZATION_NAME=final-project-cice
 
 mkdir -p $ORGANIZATION_NAME
 

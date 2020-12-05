@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ORGANIZATION_NAME=fork-repositories-trl
+ORGANIZATION_NAME=front-end-web-development-practices
 
 mkdir -p $ORGANIZATION_NAME
 
