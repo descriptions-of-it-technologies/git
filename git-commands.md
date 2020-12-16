@@ -99,7 +99,7 @@
 | git branch -d localBranchName                            | Delete branch locally.                                                                                                   |
 | git branch -D localBranchName                            |                                                                                                                          |
 | git push origin --delete remoteBranchName                | Delete branch remotely.                                                                                                  |
-| git push origin --delete \#remoteBranchName              | Delete branch remotely. Remote branch whose name starts with a hashtag '#'.                                                                                                  |
+| git push origin --delete \#70                            | Delete branch remotely. Remote branch whose name starts with a hashtag '#'.                                                                                                  |
 | git checkout nameBranch                                  | Switch to branch.                                                                                                        |
 | git checkout -b newBranchName                            | Create new Branch.                                                                                                       |
 | git log --decorate --graph --all                         |                                                                                                                          |
