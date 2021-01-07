@@ -87,6 +87,7 @@
 | git reset                                                | Undo local changes to the state of Git repo.                                                                             |
 | git reset HEAD~                                          |                                                                                                                          |
 | git merge                                                | Merge branch into an active branch.                                                                                      |
+| git merge --squash nameBranch                            |                                                                                                                          |
 | git push                                                 | Upload content for local repository to a remote repository.                                                              |
 | git config                                               | Configure the git config.                                                                                                |
 | git init                                                 | Initialize a local git repository.                                                                                       |
@@ -105,6 +106,7 @@
 | git checkout -b newBranchName                            | Create new Branch.                                                                                                       |
 | git log --decorate --graph --all                         |                                                                                                                          |
 | git push origin nameNewBranch                            | Push new branch to remote.                                                                                               |
+| git revert commitID                                      | Revert the full commit.                                                                                                                         |
 |                                                          |                                                                                                                          |
 
 
