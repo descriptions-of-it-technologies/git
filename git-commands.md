@@ -106,7 +106,8 @@
 | git checkout -b newBranchName                            | Create new Branch.                                                                                                       |
 | git log --decorate --graph --all                         |                                                                                                                          |
 | git push origin nameNewBranch                            | Push new branch to remote.                                                                                               |
-| git revert commitID                                      | Revert the full commit.                                                                                                                         |
+| git revert commitID                                      | Revert the full commit.                                                                                                  |
+| git checkout HEAD -- fileName                            | Undo local changes to a specific file                                                                                    |
 |                                                          |                                                                                                                          |
 
 
