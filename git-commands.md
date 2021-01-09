@@ -96,6 +96,7 @@
 | git commit                                               | Commit changes to head(local repository) but not to the remote repository.                                               |
 | git pull                                                 | Fetch and download content from a remote repository.                                                                     |
 | git branch                                               | Show locally branches.                                                                                                   |
+| git branch -av | grep nameBranch                         |                                                                                                                          |
 | git branch -r                                            | Show remote branches.                                                                                                    |
 | git branch -a                                            | Show locally and remote branches.                                                                                        |
 | git branch -d localBranchName                            | Delete branch locally.                                                                                                   |
