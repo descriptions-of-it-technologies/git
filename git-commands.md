@@ -79,7 +79,7 @@
 
 
 
-## Most used Git commands. 
+## Sort this Git commands. 
 
 | Key/Command                                              | Description                                                                                                              |
 | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
@@ -91,26 +91,52 @@
 | git push                                                 | Upload content for local repository to a remote repository.                                                              |
 | git config                                               | Configure the git config.                                                                                                |
 | git init                                                 | Initialize a local git repository.                                                                                       |
-| git add                                                  | Add one or more files to staging area.                                                                                   |
 | git diff                                                 | View the changes made to the file.                                                                                       |
-| git commit                                               | Commit changes to head(local repository) but not to the remote repository.                                               |
 | git pull                                                 | Fetch and download content from a remote repository.                                                                     |
-| git branch                                               | Show locally branches.                                                                                                   |
-| git branch -av | grep nameBranch                         |                                                                                                                          |
-| git branch -r                                            | Show remote branches.                                                                                                    |
-| git branch -a                                            | Show locally and remote branches.                                                                                        |
+| git checkout HEAD -- fileName                            | Undo local changes to a specific file                                                                                    |
+|                                                          |                                                                                                                          |
+
+### Working with Branches
+
+| Key/Command                                              | Description                                                                                                              |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | git branch -d localBranchName                            | Delete branch locally.                                                                                                   |
 | git branch -D localBranchName                            |                                                                                                                          |
 | git push origin --delete remoteBranchName                | Delete branch remotely.                                                                                                  |
 | git push origin --delete \#70                            | Delete branch remotely. Remote branch whose name starts with a hashtag '#'.                                              |
 | git checkout nameBranch                                  | Switch to branch.                                                                                                        |
 | git checkout -b newBranchName                            | Create new Branch.                                                                                                       |
-| git log --decorate --graph --all                         |                                                                                                                          |
 | git push origin nameNewBranch                            | Push new branch to remote.                                                                                               |
-| git revert commitID                                      | Revert the full commit.                                                                                                  |
-| git checkout HEAD -- fileName                            | Undo local changes to a specific file                                                                                    |
+| git branch                                               | Show locally branches.                                                                                                   |
+| git branch -a                                            | Show locally and remote branches.                                                                                        |
+| git branch -av | grep nameBranch                         | Show locally and remote branches. And search with specific name of branch.                                               |
+| git branch -r                                            | Show remote branches.                                                                                                    |
 |                                                          |                                                                                                                          |
 
+### Working with Commits
+
+| Key/Command                                              | Description                                                                                                              |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| git reset --soft HEAD~1                                  | Delete the most recent commit, without destroying the work you've done.                                                  |
+| git reset --hard HEAD~1                                  | Delete the most recent commit.                                                                                           |
+| git revert commitID                                      | Revert the full commit.                                                                                                  |
+| git commit                                               | Commit changes to head(local repository) but not to the remote repository.                                               |
+
+### Working with Staging Area.
+
+| Key/Command                                              | Description                                                                                                              |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| git add                                                  | Add one or more files to staging area.                                                                                   |
+| git add .                                                | Add all files to staging area.                                                                                           |
+| git add --all                                            | Add all files to staging area.                                                                                           |
+|                                                          |                                                                                                                          |
+
+### Working with Logs.
+
+| Key/Command                                              | Description                                                                                                              |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| git log --decorate --graph --all                         |                                                                                                                          |
+|                                                          |                                                                                                                          |
 
 
 
@@ -157,7 +183,7 @@
 | git status                | Shows status of changes as untracked, modified or staged. |
 | git status -sb            |                                                           |
 | git status -s             |                                                           |
-| git status                |                                                           |
+|                           |                                                           |
 
 
 
