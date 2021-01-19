@@ -55,6 +55,7 @@
 
 
 ## Documentation.
+* `origin` is the name of the remote repository, not of the remote branch.
 
 
 
@@ -78,6 +79,29 @@
 
 
 
+## Search information about this Git commands.
+
+| Key/Command                                              | Description                                                                                                              |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| git fetch upstream                                       |                                                                                                                          |
+| git merge upstream/master                                |                                                                                                                          |
+|                                                          |                                                                                                                          |
+
+`
+Step 1: From your project repository, bring in the changes and test.
+
+git fetch origin
+git checkout -b \#70 origin/\#70
+git merge dev
+`
+
+`
+Step 2: Merge the changes and update on GitHub.
+
+git checkout dev
+git merge --no-ff \#70
+git push origin dev
+`
 
 ## Sort this Git commands. 
 
@@ -94,24 +118,54 @@
 | git diff                                                 | View the changes made to the file.                                                                                       |
 | git pull                                                 | Fetch and download content from a remote repository.                                                                     |
 | git checkout HEAD -- fileName                            | Undo local changes to a specific file                                                                                    |
+| git merge [branchName]                                   | Merge changes from desired branch.                                                                                       |
+| git diff origin/nameBranch..HEAD                         | view the diff in unpushed Git commits                                                                                    |
+| git checkout -- .                                        | Revert changes.                                                                                                          |
+| git checkout stuff                                       | Checkout the branch stuff.                                                                                               |
+| git checkout -- stuff                                    | Checkout the file stuff.                                                                                                 |
 |                                                          |                                                                                                                          |
 
-### Working with Branches
+
+
+
+
+## Working with init repository.
 
 | Key/Command                                              | Description                                                                                                              |
 | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| git init                                                 | Init local repository.                                                                                                   |
+| git add .                                                | Adding all files.                                                                                                        |
+| git commit -m "message"                                  | Making commit.                                                                                                           |
+| git remote add origin gitRepoUrl                         | Add remote repository. Link remote repository with local repository.                                                     |
+| git remote                                               | Show remote repository.                                                                                                  |
+| git remote -v                                            |                                                                                                                          |
+| git push -u origin master                                | Push first commits to remote repository.                                                                                 |
+| git remote rm origin                                     | Remove linking between remote branch and local branch.                                                                   |
+|                                                          |                                                                                                                          |
+
+
+
+
+
+## Working with Branches
+
+| Key/Command                                              | Description                                                                                                              |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| git checkout -b newBranchName                            | Create new Branch.                                                                                                       |
 | git branch -d localBranchName                            | Delete branch locally.                                                                                                   |
-| git branch -D localBranchName                            |                                                                                                                          |
+| git branch -D remoteBranchName                           | Delete branch remotely.                                                                                                  |
 | git push origin --delete remoteBranchName                | Delete branch remotely.                                                                                                  |
 | git push origin --delete \#70                            | Delete branch remotely. Remote branch whose name starts with a hashtag '#'.                                              |
 | git checkout nameBranch                                  | Switch to branch.                                                                                                        |
-| git checkout -b newBranchName                            | Create new Branch.                                                                                                       |
 | git push origin nameNewBranch                            | Push new branch to remote.                                                                                               |
 | git branch                                               | Show locally branches.                                                                                                   |
 | git branch -a                                            | Show locally and remote branches.                                                                                        |
 | git branch -av | grep nameBranch                         | Show locally and remote branches. And search with specific name of branch.                                               |
 | git branch -r                                            | Show remote branches.                                                                                                    |
 |                                                          |                                                                                                                          |
+
+
+
 
 ### Working with Commits
 
@@ -121,6 +175,12 @@
 | git reset --hard HEAD~1                                  | Delete the most recent commit.                                                                                           |
 | git revert commitID                                      | Revert the full commit.                                                                                                  |
 | git commit                                               | Commit changes to head(local repository) but not to the remote repository.                                               |
+| git checkout commitId                                    |                                                                                                                          |
+| git branchName                                           |                                                                                                                          |
+| git reset --hard commitId                                | Switches to the specified commit but at the same time deletes all commits what to buy behind it.                         |
+|                                                          |                                                                                                                          |
+
+
 
 ### Working with Staging Area.
 
@@ -136,6 +196,7 @@
 | Key/Command                                              | Description                                                                                                              |
 | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | git log --decorate --graph --all                         |                                                                                                                          |
+| git log origin/nameBranch..HEAD                          | Viewing unpushed Git commits                                                                                             |
 |                                                          |                                                                                                                          |
 
 
@@ -405,7 +466,8 @@
 | git remote update          |                                                       |
 | git remote -v              |                                                       |
 | git remote set-url         |                                                       |
-
+| git remote rm origin       | Remove linking between remote branch and local branch. |
+|                            |                                                       |
 
 
 
@@ -415,6 +477,7 @@
 | Key/Command                 | Description                                         |
 | --------------------------- | --------------------------------------------------- |
 | git fetch                   | Downloads all history from the remote branches.     |
+| git fetch                   | Git gathers any commits from the target branch that do not exist in your current branch and stores them in your local repository. However, it does not merge them with your current branch. This is particularly useful if you need to keep your repository up to date, but are working on something that might break if you update your files. To integrate the commits into your master branch, you use merge. |
 | git fetch [remote][branch]  | Merge [branch] into current branch.                 |
 | git fetch --all --prune     |                                                     |
 | git fetch origin            |                                                     |
@@ -450,19 +513,20 @@
 | Key/Command                        | Description                                                       |
 | ---------------------------------- | ----------------------------------------------------------------- |
 | git stash                          |                                                                   |
-| git stash save [stashName]         | Stash all staged changes.                                         |
+| git stash save [stashName]         | Save your local modifications to a new stash.                     |
 | git stash pop                      |                                                                   |
-| git stash push                     |                                                                   |
+| git stash pop  stashId             | Remove and apply a single stashed state from the stash list.      |
+| git stash push                     | Save your local modifications to a new stash.                     |
+| git stash push -m "message"        | Save your local modifications to a new stash with message.        |
 | git stash apply                    |                                                                   |
-| git stash --all                    |                                                                   |
-| git stash clear                    |                                                                   |
-| git stash drop                     |                                                                   |
+| git stash apply stashId            | Apply stashed changes by stashId to branch.                       |
+| git stash --all                    | Include ignored files.                                            |
+| git stash clear                    | Clear all stash.                                                  |
+| git stash drop stashId             | Drop stash by stashId.                                            |
 | git stash list                     | List all stashed.                                                 |
-| git stash pop                      |                                                                   |
+| git stash show                     | Show the changes recorded in the stash as a diff.                 |
 | git stash show --text              |                                                                   |
 | git stash --include-untracked      |                                                                   |
-| git stash drop stash@{ID}          | ID from listed stash.                                             |
-| git stash apply stash@{ID}         | Merge stashed changes to branch                                   |
 
 
 
