@@ -167,6 +167,16 @@ git push origin dev
 
 
 
+### Removing one or more last remote commits
+
+| Key/Command                                              | Description                                                                                                              |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| git reset --hard commitId                                | Switches to the specified commit but at the same time deletes all commits what to buy behind it.                         |
+| git push --force                                         | Force push to remote.                                                                                                    |
+|                                                          |                                                                                                                          |
+
+
+
 ### Working with Commits
 
 | Key/Command                                              | Description                                                                                                              |
