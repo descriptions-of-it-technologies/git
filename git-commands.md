@@ -79,29 +79,19 @@
 
 
 
-## Search information about this Git commands.
+## Search information about this.
 
 | Key/Command                                              | Description                                                                                                              |
 | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| git fetch upstream                                       |                                                                                                                          |
-| git merge upstream/master                                |                                                                                                                          |
+| git merge --no-ff \nameBranch                            |                                                                                                                          |
+| git checkout -b \#70 origin/\#70                         |                                                                                                                          |
+| git squash                                               |                                                                                                                          |
+| how to rename commit                                     |                                                                                                                          |
+| How to move commit to another branch                     |                                                                                                                          |
 |                                                          |                                                                                                                          |
 
-`
-Step 1: From your project repository, bring in the changes and test.
 
-git fetch origin
-git checkout -b \#70 origin/\#70
-git merge dev
-`
 
-`
-Step 2: Merge the changes and update on GitHub.
-
-git checkout dev
-git merge --no-ff \#70
-git push origin dev
-`
 
 ## Sort this Git commands. 
 
@@ -188,8 +178,9 @@ git push origin dev
 | git checkout commitId                                    |                                                                                                                          |
 | git branchName                                           |                                                                                                                          |
 | git reset --hard commitId                                | Switches to the specified commit but at the same time deletes all commits what to buy behind it.                         |
+| git commit --amend -m "newCommitMessage"                 | Modify the most recent commit message.                                                                                   |
 |                                                          |                                                                                                                          |
-
+* [Rewriting history.](https://www.atlassian.com/git/tutorials/rewriting-history)
 
 
 ### Working with Staging Area.
