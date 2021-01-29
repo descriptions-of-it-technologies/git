@@ -141,7 +141,7 @@
 
 | Key/Command                                              | Description                                                                                                              |
 | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| git checkout -b newBranchName                            | Create new Branch.                                                                                                       |
+| git checkout -b 'newBranchName'                          | Create new Branch.                                                                                                       |
 | git branch -d localBranchName                            | Delete branch locally.                                                                                                   |
 | git branch -D remoteBranchName                           | Delete branch remotely.                                                                                                  |
 | git push origin --delete remoteBranchName                | Delete branch remotely.                                                                                                  |
@@ -179,6 +179,7 @@
 | git branchName                                           |                                                                                                                          |
 | git reset --hard commitId                                | Switches to the specified commit but at the same time deletes all commits what to buy behind it.                         |
 | git commit --amend -m "newCommitMessage"                 | Modify the most recent commit message.                                                                                   |
+| git reset HEAD^                                          | Delete a commit but keep the changes?                                                                                    |
 |                                                          |                                                                                                                          |
 * [Rewriting history.](https://www.atlassian.com/git/tutorials/rewriting-history)
 
