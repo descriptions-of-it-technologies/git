@@ -512,24 +512,25 @@
 
 ## git stash
 
-| Key/Command                        | Description                                                       |
-| ---------------------------------- | ----------------------------------------------------------------- |
-| git stash                          |                                                                   |
-| git stash save [stashName]         | Save your local modifications to a new stash.                     |
-| git stash pop                      |                                                                   |
-| git stash pop  stashId             | Remove and apply a single stashed state from the stash list.      |
-| git stash push                     | Save your local modifications to a new stash.                     |
-| git stash push -m "message"        | Save your local modifications to a new stash with message.        |
-| git stash apply                    |                                                                   |
-| git stash apply stashId            | Apply stashed changes by stashId to branch.                       |
-| git stash --all                    | Include ignored files.                                            |
-| git stash clear                    | Clear all stash.                                                  |
-| git stash drop stashId             | Drop stash by stashId.                                            |
-| git stash list                     | List all stashed.                                                 |
-| git stash show                     | Show the changes recorded in the stash as a diff.                 |
-| git stash show --text              |                                                                   |
-| git stash --include-untracked      |                                                                   |
-
+| Key/Command                                                       | Description                                                       |
+| ----------------------------------------------------------------- | ----------------------------------------------------------------- |
+| git stash                                                         |                                                                   |
+| git stash save [stashName]                                        | Save your local modifications to a new stash.                     |
+| git stash pop                                                     |                                                                   |
+| git stash pop  stashId                                            | Remove and apply a single stashed state from the stash list.      |
+| git stash push                                                    | Save your local modifications to a new stash.                     |
+| git stash push -m "message"                                       | Save your local modifications to a new stash with message.        |
+| git stash push --include-untracked -m "all changes"               |                                                                   |
+| git stash apply                                                   |                                                                   |
+| git stash apply stashId                                           | Apply stashed changes by stashId to branch.                       |
+| git stash --all                                                   | Include ignored files.                                            |
+| git stash clear                                                   | Clear all stash.                                                  |
+| git stash drop stashId                                            | Drop stash by stashId.                                            |
+| git stash list                                                    | List all stashed.                                                 |
+| git stash show                                                    | Show the changes recorded in the stash as a diff.                 |
+| git stash show --text                                             |                                                                   |
+| git stash --include-untracked                                     |                                                                   |
+|                                                                   |                                                                   |
 
 
 
