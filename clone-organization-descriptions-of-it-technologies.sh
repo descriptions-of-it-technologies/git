@@ -16,3 +16,4 @@ cd $ORGANIZATION_NAME
 curl -s https://api.github.com/orgs/$ORGANIZATION_NAME/repos\?page\=1\&per_page\=100 | jq -r '.[].ssh_url' | xargs -n 1 git clone
 curl -s https://api.github.com/orgs/$ORGANIZATION_NAME/repos\?page\=2\&per_page\=100 | jq -r '.[].ssh_url' | xargs -n 1 git clone
 curl -s https://api.github.com/orgs/$ORGANIZATION_NAME/repos\?page\=3\&per_page\=100 | jq -r '.[].ssh_url' | xargs -n 1 git clone
+curl -s https://api.github.com/orgs/$ORGANIZATION_NAME/repos\?page\=4\&per_page\=100 | jq -r '.[].ssh_url' | xargs -n 1 git clone

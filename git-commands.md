@@ -114,6 +114,7 @@
 | git checkout stuff                                       | Checkout the branch stuff.                                                                                               |
 | git checkout -- stuff                                    | Checkout the file stuff.                                                                                                 |
 |                                                          |                                                                                                                          |
+* `find . -maxdepth 3 -name .git -type d | rev | cut -c 6- | rev | xargs -I {} git -C {} pull` - This command will find all git repos in your current directory with a max depth of 3. Afterwards it will perform a git pull on the current branch for each of those repositories.
 
 
 
