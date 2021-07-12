@@ -286,7 +286,7 @@
 | Key/Command                                                    | Description                                              |
 | -------------------------------------------------------------- | -------------------------------------------------------- |
 | git commit -m "[message]"                                      | Commit everything that is staged.                        |
-| git commit -am '[description of commit]                        |                                                          |
+| git commit -am '[description of commit]                        | Staging and commit everything.                           |
 | git commit -v                                                  |                                                          |
 | git commit -v --amend                                          |                                                          |
 | git commit -v -a                                               |                                                          |
@@ -411,18 +411,19 @@
 
 ## git checkout
 
-| Key/Command                                 | Description                                                      |
-| ------------------------------------------- | ---------------------------------------------------------------- |
-| git checkout [branchName]                   | Switch to that branch.                                           | 
-| git checkout -force [branchName]            |                                                                  |
-| git checkout -f [branchName]                |                                                                  |  
-| git checkout -f                             | Recover files to the last commit in this branch.                 |
-| git checkout -b [branchName]                | Create a new branch and switch to this branch.                   |
-| git checkout -B [branchName] [commitName]   |                                                                  |
-| git checkout [branchName] -b                | Create and checkout new branch.                                  |
-| git checkout -- [file]                      | Replace file with contents from HEAD.                            |
-| git checkout develop                        |                                                                  |
-| git checkout master                         |                                                                  |
+| Key/Command                                            | Description                                                      |
+| ------------------------------------------------------ | ---------------------------------------------------------------- |
+| git checkout [branchName]                              | Switch to that branch.                                           | 
+| git checkout -force [branchName]                       |                                                                  |
+| git checkout -f [branchName]                           |                                                                  |  
+| git checkout -f                                        | Recover files to the last commit in this branch.                 |
+| git checkout -b [branchName]                           | Create a new branch and switch to this branch.                   |
+| git checkout -b [branchName] [hash sum commit]         | Create a new branch with specific commit and switch to this branch.                   |
+| git checkout -B [branchName] [commitName]              |                                                                  |
+| git checkout [branchName] -b                           | Create and checkout new branch.                                  |
+| git checkout -- [file]                                 | Replace file with contents from HEAD.                            |
+| git checkout develop                                   |                                                                  |
+| git checkout master                                    |                                                                  |
 
 
 
@@ -433,6 +434,7 @@
 | Key/Command                                   | Description                                                      |
 | --------------------------------------------- | ---------------------------------------------------------------- |
 | git log                                       | Lists version history for the current branch.                    |
+| git log -p                                    |                                                                  |
 | git log --merge                               | Lists of commits that are causing the conflict.                  |
 | git log --author=[name]                       | Lists version history for the current branch from certain author.|
 | git log --pretty=oneline                      | Lists compressed version history for the current branch.         |
@@ -603,6 +605,7 @@
 | git diff --staged                            |                                                                  |
 | git diff-tree --no-commit-id --name-only -r  |                                                                  |
 | git diff --word-diff                         |                                                                  |
+| git diff --staged                            |                                                                  |
 
 
 
@@ -639,7 +642,7 @@
 
 | Key/Command                                     | Description                                                      |
 | ----------------------------------------------- | ---------------------------------------------------------------- |
-| git rm                                          |                                                                  |
+| git rm                                          | Remove file.                                                     |
 | git rm --cached                                 |                                                                  |
 | git rm $(git ls-files --deleted) 2> /dev/null   |                                                                  |
 
@@ -652,8 +655,22 @@
 | Key/Command              | Description                                                      |
 | ------------------------ | ---------------------------------------------------------------- |
 | git restore              |                                                                  |
+| git restore [nameFIle]   |                                                                  |
 | git restore --source     |                                                                  |
+| git restore --staged     |                                                                  |
 |                          |                                                                  |
+
+
+
+
+
+## git mv
+
+| Key/Command                                | Description                                                      |
+| ------------------------------------------ | ---------------------------------------------------------------- |
+| git mv actualFileName newFileName          |                                                                  |
+|                                            |                                                                  |
+
 
 
 
